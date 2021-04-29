@@ -33,3 +33,12 @@
 ## ERD
 
 ![profilePage](assets\DDERD.JPG)
+
+
+## MVP goals
+
+- User authentication
+- Allow the user to create a new account
+- Allow the user to create a journal
+- Allow the user to view all created journals when logged in 
+- Allow the user to delete a journal when logged in
