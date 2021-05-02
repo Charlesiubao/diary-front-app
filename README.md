@@ -35,6 +35,9 @@
 ![profilePage](assets\DDERD.JPG)
 
 
+## Component Tree
+
+
 ## MVP goals
 
 - User authentication
@@ -42,3 +45,20 @@
 - Allow the user to create a journal
 - Allow the user to view all created journals when logged in 
 - Allow the user to delete a journal when logged in
+
+## Routes
+
+
+
+POST /user
+
+POST /user/login
+
+POST /user/journal
+
+DELETE /user/journal/:id
+
+## Stretch Goals
+
+- Editing the journal
+- Option to make post public or private
