@@ -1,15 +1,18 @@
 import axios from 'axios'
 import { useState } from 'react'
+import { useHistory } from 'react-router-dom'
+
 
 
 const Login = (props)=>{
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
+    const history = useHistory();
 
     const handleSubmit = (e) => {
         e.preventDefault()
         // console.log('you submitted login');
-        axios.post(`${process.env.REACT_APP_BACKEND_URL}/users/login`,{ email, password})
+        axios.post(`${process.env.REACT_APP_BACKEND_URL}/user/profile`,{ email, password})
         .then((response)=>{
             props.setUser(response.data.user)
             localStorage.setItem('userId', response.data.user.id)
@@ -21,7 +24,7 @@ const Login = (props)=>{
 
     return(
         <div className='login'>
-            <form onSubmit={handleSubmit}>
+            <form onSubmit={handleSubmit }>
             <h1>Log In</h1>
                 <div>
                     {/* <label htmlFor="new-email">Email:</label> */}
@@ -32,7 +35,7 @@ const Login = (props)=>{
                     <input placeholder='Password' id="new-password" type="password" value={password} onChange={(e)=>{setPassword(e.target.value)}} autocomplete="off" />
                 </div>
                 <div>
-                <button className='submitButton' type="submit" value="Login" >Login</button>
+                <button className='submitButton' type="submit" value="Login"  >Login</button>
                 </div>
             </form>
 

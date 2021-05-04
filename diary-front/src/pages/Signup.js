@@ -2,14 +2,14 @@ import axios from 'axios'
 import { useState } from 'react'
 
 const Signup = (props)=> {
-    const [name, setName] = useState('')
+    const [user, setUser] = useState('')
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
 
     const handleSubmit = (e) => {
         e.preventDefault()
         // console.log('you submitted signup');
-        axios.post(`${process.env.REACT_APP_BACKEND_URL}/users`,{ name, email, password})
+        axios.post(`${process.env.REACT_APP_BACKEND_URL}/user`,{ user, email, password})
         .then((response)=>{
             props.setUser(response.data.user)
             localStorage.setItem('userId', response.data.user.id)
@@ -27,8 +27,8 @@ const Signup = (props)=> {
             <form onSubmit={handleSubmit}>
                 <h1>Sign Up</h1>
                 <div>
-                    {/* <label htmlFor="new-name">Name:</label> */}
-                    <input placeholder='Username' id="new-name" value={name} onChange={(e)=>{setName(e.target.value)}} />
+                    {/* <label htmlFor="new-user">user:</label> */}
+                    <input placeholder='User' id="new-user" value={user} onChange={(e)=>{setUser(e.target.value)}} />
                 </div>
                 <div>
                     {/* <label htmlFor="new-email">Email:</label> */}

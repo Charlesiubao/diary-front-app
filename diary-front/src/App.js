@@ -7,6 +7,8 @@ import Navbar from './components/Navbar'
 import Home from './pages/Home'
 import Signup from './pages/Signup'
 import Login from './pages/Login'
+import Profile from './pages/Profile'
+import Journal from './pages/Journal'
 // import MyPost from './pages/MyPost'
 
 
@@ -36,7 +38,16 @@ function App() {
           <Login setUser={setUser} />
         }
       />
-      
+      <Route
+      path="/profile"
+      render={()=>{
+        return <Profile/>
+      }}/>
+      <Route
+      path="/journal"
+      render={()=>{
+        return <Journal/>
+      }}/>
     </div>
   );
 }

@@ -10,19 +10,19 @@ const SignupLoginForm = (props) => {
 
 
     return(
-        <div>
+        <div className = 'signup login'>
             <form>
                 <div>
-                    <label htmlFor="new-name">Name:</label>
-                    <input id="new-name" value={name} onChange={(e)=>{setEmail(e.target.value)}} />
+                    {/* <label htmlFor="new-name">Name:</label> */}
+                    <input id="new-name" value={name} onChange={(e)=>{setName(e.target.value)}} />
                 </div>
                 <div>
-                    <label htmlFor="new-email">Email:</label>
+                    {/* <label htmlFor="new-email">Email:</label> */}
                     <input id="new-email" value={email} onChange={(e)=>{setEmail(e.target.value)}} />
                 </div>
                 <div>
-                    <label htmlFor="new-password">Password:</label>
-                    <input id="new-password" type="password" value={password} onChange={(e)=>{setEmail(e.target.value)}} />
+                    {/* <label htmlFor="new-password">Password:</label> */}
+                    <input id="new-password" type="password" value={password} onChange={(e)=>{setPassword(e.target.value)}} />
                 </div>
             </form>
 
