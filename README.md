@@ -1,64 +1,70 @@
-# Dear Diary
+# Getting Started with Create React App
 
-## Overview
-  Dear Diary is full stack web application that will allow users to catalogue their thoughts, feelings and everything in between. The ability to securely login with an email and password will ensure secrecy of your thoughts.
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Wireframes
+## Available Scripts
 
- ### Landing Page
+In the project directory, you can run:
 
-![landingPage](assets\DD1.JPG)
+### `yarn start`
 
-### Sign up screen
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-![signupPage](assets\DD2.JPG)
+The page will reload if you make edits.\
+You will also see any lint errors in the console.
 
-### Log in screen
+### `yarn test`
 
-![loginPage](assets\DD3.JPG)
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### Profile Page (with journal entry)
+### `yarn build`
 
-![profilePage](assets\DD4.JPG)
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-### Profile Page (with journal entered)
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-![profilePage](assets\DD5.JPG)
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### Profile Page (with many journal entered)
+### `yarn eject`
 
-![profilePage](assets\DD6.JPG)
+**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
+If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-## ERD
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-![profilePage](assets\DDERD.JPG)
+You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
+## Learn More
 
-## Component Tree
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
+To learn React, check out the [React documentation](https://reactjs.org/).
 
-## MVP goals
+### Code Splitting
 
-- User authentication
-- Allow the user to create a new account
-- Allow the user to create a journal
-- Allow the user to view all created journals when logged in 
-- Allow the user to delete a journal when logged in
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-## Routes
+### Analyzing the Bundle Size
 
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
+### Making a Progressive Web App
 
-POST /user
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-POST /user/login
+### Advanced Configuration
 
-POST /user/journal
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-DELETE /user/journal/:id
+### Deployment
 
-## Stretch Goals
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-- Editing the journal
-- Option to make post public or private
+### `yarn build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
